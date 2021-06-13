@@ -12,16 +12,14 @@
   <style type="text/css">@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v90/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
   <style>.mat-typography{font:400 14px/20px Roboto,Helvetica Neue,sans-serif;letter-spacing:normal;}body,html{height:100%;}body{margin:0;font-family:Roboto,Helvetica Neue,sans-serif;}</style>
   <?php wp_enqueue_style('style', get_template_directory_uri() . '/dist/styles.css', [], '1.0.0'); ?>
+  <?php
+  wp_enqueue_script('script', get_template_directory_uri() . '/dist/kita-purzelbaum/runtime.js', [], '1.0.0');
+  wp_enqueue_script('script', get_template_directory_uri() . '/dist/kita-purzelbaum/polyfills.js', [], '1.0.0');
+  wp_enqueue_script('script', get_template_directory_uri() . '/dist/kita-purzelbaum/main.js', [], '1.0.0');
+  ?>
   <?php wp_head(); ?>
+
 </head>
 <body class="mat-typography">
   <app-root></app-root>
-  <script src="<?php echo get_template_directory_uri(); ?>/dist/runtime.js?v=1.0.0"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/dist/polyfills.js?v=1.0.0"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/dist/main.js?v=1.0.0"></script>
-  <!-- <?php
-  wp_enqueue_script('script', get_template_directory_uri() . '/dist/runtime.js', [], '1.0.0');
-  wp_enqueue_script('script', get_template_directory_uri() . '/dist/polyfills.js', [], '1.0.0');
-  wp_enqueue_script('script', get_template_directory_uri() . '/dist/main.js', [], '1.0.0');
-  ?> -->
 </body></html>
