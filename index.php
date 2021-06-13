@@ -4,7 +4,7 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <title>KiTa Purzelbaum</title>
-  <base href="<?php get_template_directory_uri(); ?>/dist/kita-purzelbaum/">
+  <!-- <base href="<?php get_template_directory_uri(); ?>/dist/kita-purzelbaum/"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
