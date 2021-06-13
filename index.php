@@ -13,9 +13,9 @@
   <style>.mat-typography{font:400 14px/20px Roboto,Helvetica Neue,sans-serif;letter-spacing:normal;}body,html{height:100%;}body{margin:0;font-family:Roboto,Helvetica Neue,sans-serif;}</style>
   <?php wp_enqueue_style('style', get_template_directory_uri() . '/dist/kita-purzelbaum/styles.css', [], '1.0.0'); ?>
   <?php
-  wp_enqueue_script('script', get_template_directory_uri() . '/dist/kita-purzelbaum/runtime.js', [], '1.0.0', true);
-  wp_enqueue_script('script', get_template_directory_uri() . '/dist/kita-purzelbaum/polyfills.js', [], '1.0.0', true);
-  wp_enqueue_script('script', get_template_directory_uri() . '/dist/kita-purzelbaum/main.js', [], '1.0.0', true);
+  wp_enqueue_script('runtime', get_template_directory_uri() . '/dist/kita-purzelbaum/runtime.js', [], '1.0.0', true);
+  wp_enqueue_script('polyfills', get_template_directory_uri() . '/dist/kita-purzelbaum/polyfills.js', [], '1.0.0', true);
+  wp_enqueue_script('main', get_template_directory_uri() . '/dist/kita-purzelbaum/main.js', [], '1.0.0', true);
   ?>
   <?php wp_head(); ?>
 </head>
