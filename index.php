@@ -16,9 +16,9 @@
 </head>
 <body class="mat-typography">
   <app-root></app-root>
-  <script src="<?php get_template_directory_uri(); ?>/dist/runtime.js?v=1.0.0"></script>
-  <script src="<?php get_template_directory_uri(); ?>/dist/polyfills.js?v=1.0.0"></script>
-  <script src="<?php get_template_directory_uri(); ?>/dist/main.js?v=1.0.0"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/dist/runtime.js?v=1.0.0"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/dist/polyfills.js?v=1.0.0"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/dist/main.js?v=1.0.0"></script>
   <!-- <?php
   wp_enqueue_script('script', get_template_directory_uri() . '/dist/runtime.js', [], '1.0.0');
   wp_enqueue_script('script', get_template_directory_uri() . '/dist/polyfills.js', [], '1.0.0');
