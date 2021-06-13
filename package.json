@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --output-hashing=none",
+    "build": "ng build --output-hashing=none --deploy-url /dist/kita-purzelbaum/assets",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
