@@ -16,6 +16,9 @@
   wp_enqueue_script('runtime', get_template_directory_uri() . '/dist/kita-purzelbaum/runtime.js', [], '1.0.2', true);
   wp_enqueue_script('polyfills', get_template_directory_uri() . '/dist/kita-purzelbaum/polyfills.js', [], '1.0.2', true);
   wp_enqueue_script('main', get_template_directory_uri() . '/dist/kita-purzelbaum/main.js', [], '1.0.2', true);
+  
+  // $custom_logo_id = get_theme_mod('custom_logo');
+  // $image = wp_get_attachment_image_src($custom_logo_id, 'full');
   ?>
   <?php wp_head(); ?>
 </head>
