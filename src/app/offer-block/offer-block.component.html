@@ -1,0 +1,32 @@
+<div class="content-w">
+  <h1 class="mat-display-2">Unser Angebot</h1>
+  <div class="mat-body-1">
+    In der KiTa Purzelbaum betreuen wir Kinder ab dem 4. Lebensmonat bis zum Schuleintritt.
+    <!-- Unsere Mahlzeiten werden täglich frisch zubereitet. -->
+    Wir haben von Montag bis Freitag von 08:00 Uhr bis 18:00 Uhr geöffnet.
+    Für die Betreuung Ihres Kindes können Sie folgendes Leistungsangebot nutzen:
+  </div>
+
+  <div class="offers">
+    <div class="offer-container" *ngFor="let offer of offers">
+      <div>
+        <app-blox [blocks]="offer.blocks"></app-blox>
+      </div>
+      <span class="mat-body-2">
+        {{offer.label}}
+        <mat-icon *ngIf="offer.lunch">restaurant</mat-icon>
+      </span>
+      <span class="time mat-body-1">
+        <mat-icon>schedule</mat-icon>
+        {{offer.info}}
+      </span>
+    </div>
+  </div>
+
+  <div class="mat-body-1">
+    Die Elternbeiträge können für Familien, die in Liechtenstein wohnhaft oder in Liechtenstein ordentlich veranlagt sind, subventioniert werden.
+  </div>
+  <a href="https://kibe.cse.ch/asp_prod/PORTAL/AngularAppAction/LiePortalCalculator;jsessionid=65549BCE5764EC438C1FF77686D22F75" target="_blank" mat-button>
+    Kostenrechnung des Elternportals
+  </a>
+</div>

@@ -1,0 +1,41 @@
+:host {
+  display: inline-block;
+
+  div {
+    &:not(.has-text) {
+      a, button {
+        padding-right: 0;
+      }
+    }
+
+    &.outlined {
+      a, button {
+        background: transparent;
+        border: 1px solid rgba(0, 0, 0, .1);
+      }
+    }
+
+    a, button {
+      width: 100%;
+      text-transform: uppercase;
+      background: rgba(0, 20, 104, .1);
+      color: #001468;
+      padding-left: 0;
+    
+      mat-icon {
+        color: #001468;
+        height: 36px;
+        line-height: 36px;
+        width: 36px;
+        text-align: center;
+        font-size: 16px;
+      }
+    }
+  
+    .text {
+      height: 36px;
+      line-height: 36px;
+      display: inline-block;
+    }
+  }
+}

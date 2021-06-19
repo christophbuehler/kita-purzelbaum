@@ -1,0 +1,12 @@
+<div [class]="{'has-text': text}" [class.outlined]="appearance === 'outlined'">
+  <a [href]="link" mat-button *ngIf="link; else noLink">
+    <mat-icon>{{icon}}</mat-icon>
+    <span *ngIf="text" class="text">{{text}}</span>
+  </a>
+  <ng-template #noLink>
+    <button mat-button>
+      <mat-icon>{{icon}}</mat-icon>
+      <span *ngIf="text" class="text">{{text}}</span>
+    </button>
+  </ng-template>
+</div>

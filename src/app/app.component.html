@@ -1,23 +1,36 @@
-<app-new-opening-block></app-new-opening-block>
+<div id="start"></div>
 
-<mat-toolbar>
-  <div class="content-w" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="start center">
-    <img src="https://kita-purzelbaum.li/wp-content/themes/kita-purzelbaum/dist/kita-purzelbaum/assets/kitapurzelbaum.svg" height="84" alt="">
-    <nav fxFlex>
-      <ul>
-        <li>
-          <a href="#lage">Lage</a>
-        </li>
-        <li>
-          <a href="#ueber-uns">Über Uns</a>
-        </li>
-        <li>
-          <a href="#programm">Programm</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</mat-toolbar>
+<div class="stretch" fxLayout="column">
+  <app-new-opening-block></app-new-opening-block>
+  <mat-toolbar class="sticky " #toolbar>
+    <div class="content-w" fxLayout="row" fxLayoutAlign="start center">
+      <img src="/assets/kitapurzelbaum.svg" height="84" alt="Logo Kita Purzelbaum">
+      <nav fxFlex>
+        <ul>
+          <li>
+            <a href="#angebot">Angebot</a>
+          </li>
+          <li>
+            <a href="#ueber-uns">Über Uns</a>
+          </li>
+          <li>
+            <a href="#kontakt">Kontakt</a>
+          </li>
+          <li>
+            <a href="#anmeldung">Anmeldung</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </mat-toolbar>
+  <app-text-block fxFlex></app-text-block>
+</div>
 
-<app-text-block></app-text-block>
-<app-location-block></app-location-block>
+
+
+<app-offer-block id="angebot"></app-offer-block>
+<app-gerti-block id="ueber-uns"></app-gerti-block>
+<app-contact-block id="kontakt"></app-contact-block>
+<app-registration-block id="anmeldung"></app-registration-block>
+
+<app-footer-block></app-footer-block>

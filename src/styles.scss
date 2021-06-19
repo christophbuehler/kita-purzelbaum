@@ -34,10 +34,8 @@ $kita-purzelbaum-theme: mat.define-light-theme((
 @include mat.all-component-themes($kita-purzelbaum-theme);
 
 /* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
+html, body { height: 100%; min-width: 320px; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
 
 .content-w {
   margin: 0 auto;
@@ -46,3 +44,36 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   width: 100%;
   max-width: 1200px;
 }
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #001468;
+  border-bottom: 1px solid rgba(0, 20, 104, 0.1);
+  // background: rgba(0, 0, 0, .1);
+  cursor: pointer;
+  transition: border-bottom .2s ease;
+
+  &:focus {
+    border-bottom-color: #001468;
+  }
+}
+
+.material-icons {
+  font-family: Material Icons Outlined!important;
+}
+
+
+@media all and (max-width: 959px) {
+  .mat-display-1 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+  .mat-display-3 {
+    font-size: 36px !important;
+    line-height: 40px !important;
+    margin-bottom: 32px !important;
+  }
+}
+
+

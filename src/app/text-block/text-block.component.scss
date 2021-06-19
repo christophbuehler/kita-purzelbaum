@@ -1,4 +1,68 @@
 :host {
   display: block;
-  padding: 64px 0;
+  padding: 128px 0;
+  position: relative;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,255,1) 41%, rgba(255,255,255,1) 100%);
+
+  @media all and (max-width: 959px) {
+    padding: 32px 0;
+  }
+  
+  .mat-display-1 {
+    margin: 0;
+  }
+  
+  .canvas {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  
+    canvas {
+      display: block;
+      margin: 0 auto;
+      width: 20%;
+      z-index: 0;
+      min-width: 320px;
+      opacity: .8;
+    }
+  }
+
+  .content-w {
+    position: relative;
+    z-index: 1;
+    // text-align: center;
+
+    .mat-display-1 {
+      color: #333;
+    }
+
+    .down-scroll {
+      margin-top: 16px;
+
+
+      mat-icon {
+        animation: MoveUpDown 1.5s linear infinite;
+        font-size: 32px;
+        width: 40px;
+        height: 40px;
+
+        @keyframes MoveUpDown {
+          0%, 100% {
+            transform: translateY(6px);
+          }
+          50% {
+            transform: translateY(10px);
+          }
+        }
+      }
+    }
+
+    &.narrow {
+      .text {
+        text-align: center;
+      }
+    }
+  }
 }
