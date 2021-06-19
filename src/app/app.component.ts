@@ -4,7 +4,7 @@ import { map, tap } from 'rxjs/operators';
 import { stickyObservers } from './sticky-observers';
 import { environment } from '../environments/environment';
 
-export const assetRoot = environment.production ? '../' : '../assets/';
+export const assetRoot = environment.production ? '/wp-content/themes/kita-purzelbaum/dist/kita-purzelbaum/assets/' : '../assets/';
 
 if (environment.production) {}
 
