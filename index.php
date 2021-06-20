@@ -12,9 +12,9 @@
   <style type="text/css">@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v90/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');}@font-face{font-family:'Material Icons Outlined';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialiconsoutlined/v63/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcel5euIg.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}.material-icons-outlined{font-family:'Material Icons Outlined';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style> <style>.mat-typography{font:400 14px/20px Roboto,Helvetica Neue,sans-serif;letter-spacing:normal;}body,html{height:100%;}body{margin:0;font-family:Roboto,Helvetica Neue,sans-serif;}</style>
   <?php wp_enqueue_style('style', get_template_directory_uri() . '/dist/kita-purzelbaum/styles.css', [], '1.0.3'); ?>
   <?php
-  wp_enqueue_script('runtime', get_template_directory_uri() . '/dist/kita-purzelbaum/runtime.js', [], '1.0.3', true);
-  wp_enqueue_script('polyfills', get_template_directory_uri() . '/dist/kita-purzelbaum/polyfills.js', [], '1.0.3', true);
-  wp_enqueue_script('main', get_template_directory_uri() . '/dist/kita-purzelbaum/main.js', [], '1.0.3', true);
+  wp_enqueue_script('runtime', get_template_directory_uri() . '/dist/kita-purzelbaum/runtime.js', [], '1.0.4', true);
+  wp_enqueue_script('polyfills', get_template_directory_uri() . '/dist/kita-purzelbaum/polyfills.js', [], '1.0.4', true);
+  wp_enqueue_script('main', get_template_directory_uri() . '/dist/kita-purzelbaum/main.js', [], '1.0.4', true);
   
   // $custom_logo_id = get_theme_mod('custom_logo');
   // $image = wp_get_attachment_image_src($custom_logo_id, 'full');
