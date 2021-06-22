@@ -8,9 +8,9 @@ export class Blox {
   private delayms = 20;
   private w?: number; // cube width
   private h?: number; // cube height
-  private b = 1; // border
+  private b = 2; // border
   private blocks?: string[][];
-  private pad = 8;
+  private pad = 16;
 
   constructor(private canvas: HTMLCanvasElement) {
     this.ctx = this.canvas.getContext('2d')!;
@@ -28,8 +28,6 @@ export class Blox {
   }
 
   private async clear(): Promise<void> {
-    // this.ctx.fillStyle = 'rgba(255, 255, 255, .1)';
-    // this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
   }
 
@@ -60,7 +58,7 @@ export class Blox {
   private async draw(): Promise<unknown> {
     const { canvas, delayms, blocks, pad } = this;
 
-    canvas.width = canvas.clientWidth;
+    canvas.width = canvas.clientWidth * 2;
 
     const cols = blocks![0].length;
     const rows = blocks!.length;
@@ -69,7 +67,7 @@ export class Blox {
     this.h = this.w! * 0.65;
 
     canvas.height = this.h * rows + 2*pad;
-    canvas.style.height = `${canvas.height}px`;
+    canvas.style.height = `${canvas.height / 2}px`;
 
     this.ctx.translate(pad, pad);
 

@@ -7,7 +7,6 @@
   .image {
     max-width: 100%;
     position: relative;
-    margin-bottom: 32px;
 
     .bg-image {
       background-image: url(https://kita-purzelbaum.li/wp-content/themes/kita-purzelbaum/dist/kita-purzelbaum/assets/gerti-white.png);
@@ -25,6 +24,16 @@
       width: 220px;
       z-index: 1;
       position: relative;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+
+    @media all and (max-width: 700px) {
+      grid-template-columns: 1fr;
     }
   }
 
