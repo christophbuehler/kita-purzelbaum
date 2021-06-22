@@ -51,14 +51,7 @@
     box-sizing: border-box;
   }
 
-  a {
+  app-btn {
     margin-top: 16px;
-    text-transform: uppercase;
-    background: rgba(0, 20, 104, .1);
-    color: #001468;
-
-    mat-icon {
-      color: #001468;
-    }
   }
 }

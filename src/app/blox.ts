@@ -112,9 +112,11 @@ export class Blox {
 
     const oneBlock = (currentOffset: number) => {
       const _x = x + currentOffset * w!;
+      const paddingLeft = currentOffset > 0 ? 0 : b/2;
+      const paddingRight = currentOffset < offset ? 0 : b/2;
 
       ctx.fillStyle = color;
-      ctx.fillRect(_x + b/2, y - h! + b/2, w! - b, h! - b);
+      ctx.fillRect(_x + paddingLeft, y - h! + b/2, w! - paddingLeft - paddingRight, h! - b);
 
       wobble(_x + w! / 4);
       wobble(_x + (w! / 4) * 3);

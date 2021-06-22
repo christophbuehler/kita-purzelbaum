@@ -1,0 +1,22 @@
+<mat-toolbar>
+  <div class="content-w" fxLayout="row" fxLayoutAlign="start center">
+    <img src="https://kita-purzelbaum.li/wp-content/themes/kita-purzelbaum/dist/kita-purzelbaum/assets/kitapurzelbaum.svg" height="84" alt="Logo Kita Purzelbaum">
+    <div class="burger-box" fxFlex fxLayoutAlign="end center">
+      <button mat-icon-button [matMenuTriggerFor]="menu" class="burger-btn" aria-label="Navigation button">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item *ngFor="let entry of nav">
+          <a [href]="entry[0]">{{entry[1]}}</a>
+        </button>
+      </mat-menu>
+    </div>
+    <nav fxFlex>
+      <ul>
+        <li *ngFor="let entry of nav">
+          <a [href]="entry[0]">{{entry[1]}}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</mat-toolbar>

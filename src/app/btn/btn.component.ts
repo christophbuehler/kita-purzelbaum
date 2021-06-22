@@ -10,6 +10,7 @@ export class BtnComponent implements OnInit {
   @Input() icon?: string;
   @Input() text?: string;
   @Input() appearance = 'filled';
+  @Input() target = '_self';
 
   constructor() { }
 

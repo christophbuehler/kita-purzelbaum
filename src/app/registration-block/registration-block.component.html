@@ -2,31 +2,10 @@
   <h1 class="mat-display-2">Anmeldung</h1>
   <div class="grid">
     <div class="mat-body-1">
-      <form #form action="mailto:gertraud@kita-purzelbaum.li" method="POST" enctype="text/plain" fxLayout="column">
-        <mat-form-field appearance="fill">
-          <mat-label>Ihr Name</mat-label>
-          <input matInput type="text" name="ContactName">
-        </mat-form-field>
-
-        <div fxLayout="row" *ngFor="let child of children;let i=index; trackBy: trackBy">
-          <mat-form-field fxFlex appearance="fill">
-            <mat-label>Name des {{i+1}}. Kindes</mat-label>
-            <input matInput type="text" [name]="'ChildName' + i">
-          </mat-form-field>
-          <app-btn class="remove-btn" appearance="outlined" icon="remove" *ngIf="children.length > 1" (click)="removeChild($event, i)"></app-btn>
-        </div>
-
-        <app-btn class="add-btn" *ngIf="children.length < 5" appearance="outlined" icon="add" text="Kind hinzufügen" (click)="addChild($event)"></app-btn>
-
-        <mat-form-field appearance="fill">
-          <mat-label>Kommentar</mat-label>
-          <textarea matInput name="ContactComment" cols="30" rows="5"></textarea>
-        </mat-form-field>
-        <app-btn class="submit-btn" icon="mail" text="Anmeldung absenden" (click)="submit()"></app-btn>
-      </form>
+      <app-blox [config]="config"></app-blox>
     </div>
     <div>
-      Die Anmeldung bei der KiTa Purzelbaum erfolgt über das <a href="https://kibe.cse.ch/asp_prod/PORTAL/LIE/Login.do;jsessionid=65549BCE5764EC438C1FF77686D22F75?&method=editUserData&loginPhase=loginPhaseCreateUser">Elternportal</a>. Wir bitten Sie, im Vorhinein per E-Mail, Telefon oder WhatsApp oder über das Anmeldeformular mit uns Kontakt aufzunehmen, damit wir einen Platz für Ihr Kind garantieren können.
+      Die Anmeldung bei der KiTa Purzelbaum erfolgt über das <a target="_blank" href="https://kibe.cse.ch/asp_prod/PORTAL/LIE/Login.do;jsessionid=65549BCE5764EC438C1FF77686D22F75?&method=editUserData&loginPhase=loginPhaseCreateUser">Elternportal</a>. Wir bitten Sie, im Vorhinein per E-Mail, Telefon oder WhatsApp mit uns Kontakt aufzunehmen, damit wir einen Platz für Ihr Kind garantieren können.
     </div>
   </div>
 </div>

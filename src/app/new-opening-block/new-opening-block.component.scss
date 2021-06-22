@@ -1,14 +1,10 @@
 :host {
   display: block;
-  // background-color: #eeeeff;
+  background-color: #fafafa;
+  // background-color: rgba(250, 250, 250, .9);
+  z-index: 1;
   
   app-btn {
     margin-top: 16px;
-  }
-
-  .content-w {
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-    // background-color: #eeeeff;
-    // border-radius: 4px;
   }
 }

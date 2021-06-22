@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
-import { Blox } from '../blox';
+import { Blox, BloxConfig } from '../blox';
 
 @Component({
   selector: 'app-blox',
@@ -9,13 +9,14 @@ import { Blox } from '../blox';
 export class BloxComponent implements AfterViewInit {
   @ViewChild('canvas', { read: ElementRef }) canvas?: ElementRef<HTMLCanvasElement>;
   @Input() blocks?: string[][];
+  @Input() config?: BloxConfig;
 
   constructor() { }
 
   ngAfterViewInit(): void {
     const canvas = this.canvas!.nativeElement;
     const blox = new Blox(canvas);
-    blox.build({
+    blox.build(this.config || {
       blocks: this.blocks,
     });
   }

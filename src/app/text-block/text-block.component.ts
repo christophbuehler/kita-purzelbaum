@@ -17,7 +17,7 @@ export class TextBlockComponent implements AfterViewInit {
 
     const urls = [
       // '../assets/16x22/monalisa.png',
-      `${assetRoot}16x22/tower.png`,
+      `${assetRoot}16x22/shapes.png`,
       // '../assets/flower2.png',
     ];
     let i = 0;
@@ -25,8 +25,8 @@ export class TextBlockComponent implements AfterViewInit {
     const rebuild: any = () => blox.build({
       url: urls[i++ % urls.length]
     })
-      .then(() => new Promise(resolve => setTimeout(resolve, 10000)))
-      .then(() => rebuild());
+      // .then(() => new Promise(resolve => setTimeout(resolve, 10000)))
+      // .then(() => rebuild());
 
     rebuild();
   }

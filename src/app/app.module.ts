@@ -18,6 +18,7 @@ import { AgmCoreModule } from '@agm/core';
 import { ContactBlockComponent } from './contact-block/contact-block.component';
 import { BtnComponent } from './btn/btn.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HeaderBlockComponent } from './header-block/header-block.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BloxComponent,
     ContactBlockComponent,
     BtnComponent,
+    HeaderBlockComponent,
   ],
   imports: [
     BrowserModule,
