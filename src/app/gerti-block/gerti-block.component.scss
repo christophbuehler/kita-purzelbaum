@@ -1,18 +1,35 @@
 :host {
   display: block;
-  padding: 32px 0;
-  background: #fbfbfd;
+  padding: 64px 0;
+  background: #f0f1f5;
+  --image-margin: 16px;
 
   .image {
-    width: 180px;
     max-width: 100%;
-    padding-right: 64px;
+    position: relative;
+    margin-bottom: 32px;
 
-    img {
-      width: 100%;
-      border-radius: 50%;
-      // border: 12px solid #eeeeff;
+    .bg-image {
+      background-image: url(https://kita-purzelbaum.li/wp-content/themes/kita-purzelbaum/dist/kita-purzelbaum/assets/gerti-white.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      left: var(--image-margin);
+      top: var(--image-margin);
+      width: calc(100% - var(--image-margin) * 2);
+      height: calc(100% - var(--image-margin) * 2);
     }
+
+    app-blox {
+      width: 220px;
+      z-index: 1;
+      position: relative;
+    }
+  }
+
+  .text {
+    padding: 32px 0;
   }
 
   .mat-display-1 {

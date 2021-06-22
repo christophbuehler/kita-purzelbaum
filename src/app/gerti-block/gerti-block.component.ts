@@ -6,6 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gerti-block.component.scss']
 })
 export class GertiBlockComponent implements OnInit {
+  blocks = [
+    ['#ADEBEC', '#ADEBEC', '#ADEBEC', '#ADEBEC', '#ADEBEC', '#ADEBEC', '#ADEBEC'],
+    ['#ADEBEC', '#ADEBEC', '', '', '', '#ADEBEC', '#ADEBEC'],
+    ['#ADEBEC', '', '', '', '', '', '#ADEBEC'],
+    ['#ADEBEC', '', '', '', '', '', '#ADEBEC'],
+    ['#ADEBEC', '', '', '', '', '', '#ADEBEC'],
+    ['#ADEBEC', '', '', '', '', '', '#ADEBEC'],
+    ['#ADEBEC', '', '', '', '', '', '#ADEBEC'],
+    ['#ADEBEC', '', '', '', '', '', '#ADEBEC'],
+    ['#ADEBEC', '', '', '', '', '', '#ADEBEC'],
+    ['#ADEBEC', '', '', '', '', '', '#ADEBEC'],
+    ['#ABC6C8', '#ABC6C8', '#ABC6C8', '#ABC6C8', '#ABC6C8', '#ABC6C8', '#ABC6C8'],
+  ];
 
   constructor() { }
 
