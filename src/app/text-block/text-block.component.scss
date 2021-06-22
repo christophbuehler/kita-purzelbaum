@@ -33,7 +33,7 @@
       margin: 0 auto;
       width: 95%;
       z-index: 0;
-      min-width: 1200px;
+      min-width: 800px;
       opacity: .3;
     }
   }
@@ -44,6 +44,7 @@
 
     .down-scroll {
       margin-top: 16px;
+      background: white;
 
       mat-icon {
         animation: MoveUpDown 1.5s linear infinite;
