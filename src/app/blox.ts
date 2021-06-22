@@ -5,7 +5,7 @@ export interface BloxConfig {
 
 export class Blox {
   private ctx: CanvasRenderingContext2D;
-  private delayms = 50;
+  private delayms = 20;
   private w?: number; // cube width
   private h?: number; // cube height
   private b = 1; // border
