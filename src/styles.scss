@@ -45,12 +45,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   max-width: 1200px;
 }
 
-a {
+a:not(.nolink) {
   text-decoration: none;
   display: inline-block;
   color: #001468;
   border-bottom: 1px solid rgba(0, 20, 104, 0.1);
-  // background: rgba(0, 0, 0, .1);
   cursor: pointer;
   transition: border-bottom .2s ease;
 
@@ -63,6 +62,12 @@ a {
   font-family: Material Icons Outlined!important;
 }
 
+.mat-menu-item {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
 
 @media all and (max-width: 959px) {
   .mat-display-1 {
