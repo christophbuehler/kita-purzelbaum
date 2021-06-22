@@ -17,7 +17,7 @@ export class TextBlockComponent implements AfterViewInit {
 
     const urls = [
       // '../assets/16x22/monalisa.png',
-      `${assetRoot}16x22/shapes.png`,
+      `${assetRoot}16x22/shapes2.png`,
       // '../assets/flower2.png',
     ];
     let i = 0;
