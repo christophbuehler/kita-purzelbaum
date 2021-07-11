@@ -9,10 +9,11 @@
     position: relative;
 
     .bg-image {
+      // background-image: url(../../assets/gerti-blumen.png);
       background-image: url(https://kita-purzelbaum.li/wp-content/themes/kita-purzelbaum/dist/kita-purzelbaum/assets/gerti-blumen.png);
       background-position: center;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       position: absolute;
       left: var(--image-margin);
       top: var(--image-margin);
@@ -21,7 +22,7 @@
     }
 
     app-blox {
-      width: 220px;
+      width: 380px;
       z-index: 1;
       position: relative;
     }

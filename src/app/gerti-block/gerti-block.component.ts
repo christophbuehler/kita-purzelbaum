@@ -7,15 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GertiBlockComponent implements OnInit {
   blocks = [
-    ['#bbbb00', '#bbbb00', '#bbbb00', '#bbbb00', '#bbbb00', '#bbbb00', '#bbbb00'],
-    ['#bbbb00', '#bbbb00', '', '', '', '#bbbb00', '#bbbb00'],
-    ['#bbbb00', '', '', '', '', '', '#bbbb00'],
-    ['#bbbb00', '', '', '', '', '', '#bbbb00'],
-    ['#bbbb00', '', '', '', '', '', '#bbbb00'],
-    ['#bbbb00', '', '', '', '', '', '#bbbb00'],
-    ['#bbbb00', '', '', '', '', '', '#bbbb00'],
-    ['#bbbb00', '', '', '', '', '', '#bbbb00'],
-    ['#11bb00', '#11bb00', '#11bb00', '#11bb00', '#11bb00', '#11bb00', '#11bb00'],
+    ['#A3CBF0', '#A3CBF0', '#A3CBF0', '#A3CBF0', '#A3CBF0', '#A3CBF0', '#A3CBF0', '#A3CBF0'],
+    ['#ffff88', '#ffff88', '', '', '', '', '#ffff88', '#ffff88'],
+    ['#ffff88', '', '', '', '', '', '', '#ffff88'],
+    ['#ffff88', '', '', '', '', '', '', '#ffff88'],
+    ['#ffff88', '', '', '', '', '', '', '#ffff88'],
+    ['#ffff88', '', '', '', '', '', '', '#ffff88'],
+    ['#ffff88', '', '', '', '', '', '', '#ffff88'],
+    ['#ffff88', '', '', '', '', '', '', '#ffff88'],
+    ['#ffff88', '', '', '', '', '', '', '#ffff88'],
+    ['#ffff88', '', '', '', '', '', '', '#ffff88'],
+    ['#ffff88', '', '', '', '', '', '', '#ffff88'],
+    ['#ffff88', '#ffff88', '#ffff88', '#ffff88', '#ffff88', '#ffff88', '#ffff88', '#ffff88'],
   ];
 
   constructor() { }
